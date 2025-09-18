@@ -23,6 +23,7 @@ function submitTodo(evt) {
   toDoArr.unshift(todoObj);
   console.log("toDoArr 1", toDoArr);
   writeTodos();
+  todoNameInput.value = "";
 }
 
 function writeTodos() {
