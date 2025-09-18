@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.roboto-mono {
+  font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  color: rgb(34, 17, 25);
+}
+
+h1 {
+  color: rgb(34, 17, 25);
+  font-weight: 500;
+}
+h2 {
+  background-color: rgb(255, 217, 247);
+  box-shadow: inset 4px 8px 10px rgba(255, 255, 255, 0.636);
+  font-style: italic;
+  border-top: 0.5px solid rgb(233, 171, 218);
+  font-size: 1.2rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  color: rgb(34, 17, 25);
+  font-weight: 450;
+}
+h3 {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: rgb(34, 17, 25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono";
+}
+
+body {
+  max-width: 94dvw;
+  background: linear-gradient(rgba(255, 242, 255, 1) 0%, rgba(255, 163, 237, 1) 100%);
+  margin: 0 auto;
+  height: 120dvh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  margin: 2rem 0;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 6px rgb(255, 217, 247);
+}
+label {
+  font-size: 0.7rem;
+  font-style: italic;
+  opacity: 60%;
+  margin-left: 3px;
+}
+input {
+  border-radius: 10px;
+  border: 0.5px solid rgb(233, 171, 218);
+  padding: 0.2rem 0.4rem;
+  box-shadow: inset -2px 4px 6px rgba(128, 128, 128, 0.23);
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  color: rgb(34, 17, 25);
+}
+
+input[type="checkbox"] {
+  height: 15px;
+  width: 15px;
+  box-shadow: inset -2px 2px 2px rgba(0, 0, 0, 0.083);
+  margin-left: 0.2rem;
+  accent-color: rgb(255, 89, 219);
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+  border-color: 1px solid rgb(233, 171, 218);
+}
+
+.input_section {
+  margin-bottom: 1rem;
+}
+
+input[type="text"]:focus {
+  outline: 1px solid rgb(255, 89, 219);
+}
+li {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom: 0.5px solid rgb(233, 171, 218);
+  height: 35px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: start;
+  position: relative;
+  color: rgb(34, 17, 25);
+}
+
+li:nth-child(even) {
+  background-color: rgb(255, 217, 247);
+  box-shadow: inset 2px 4px 10px rgba(255, 255, 255, 0.864);
+}
+
+li:nth-child(odd) {
+  background-color: rgb(255, 242, 252);
+}
+
+ul {
+  width: 100%;
+  box-shadow: 2px 4px 10px rgb(253, 247, 250);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  min-height: 70px;
+  background-color: rgb(255, 217, 247);
+  box-shadow: inset -4px -8px 10px rgba(255, 255, 255, 0.359);
+  border: 0.5px solid rgb(233, 171, 218);
+}
+
+.list_container {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 400px;
+  gap: 20px;
+}
+
+.list {
+  margin: 40px 0;
+}
+
+.todo {
+  width: 100%;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.todo h2 {
+  border-left: 0.5px solid rgb(233, 171, 218);
+  border-right: 0.5px solid rgb(233, 171, 218);
+}
+
+li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.done {
+  width: 100%;
+}
+
+.done h2 {
+  border-right: 0.5px solid rgb(233, 171, 218);
+  border-left: 0.5px solid rgb(233, 171, 218);
+}
+
+.list h2 {
+  border-bottom: 0.5px solid rgb(233, 171, 218);
+  width: 100%;
+  padding: 0.5rem;
+  font-family: "Roboto Mono";
+}
+
+button {
+  background-color: rgb(255, 217, 247);
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  border: 0.5px solid rgb(233, 171, 218);
+  box-shadow: inset 2px 4px 6px white;
+}
+
+button:hover {
+  background-color: rgb(255, 234, 251);
+  cursor: pointer;
+}
+
+#delete_btn {
+  color: rgb(90, 53, 82);
+  font-weight: 300;
+  place-self: center;
+  position: absolute;
+  right: 0.6rem;
+}
+
+#delete_btn:hover {
+  color: rgb(234, 153, 216);
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter {
+  display: flex;
+  gap: 0.5rem;
+  font-weight: 300;
+  color: rgb(34, 17, 25);
+  font-size: 0.8rem;
+  position: absolute;
+  right: 2.5rem;
+  border: 0.5px solid rgb(233, 171, 218);
+  padding: 0.1rem;
+  background-color: rgb(255, 247, 255);
+  border-radius: 4px;
+  box-shadow: inset -2px 4px 6px rgba(128, 128, 128, 0.23);
+}
+
+.counter-minus {
+  margin-right: -8px;
+  margin-left: 8px;
+}
+.counter-minus:hover,
+.counter-plus:hover {
+  color: rgb(234, 153, 216);
+  cursor: pointer;
+}
+
+.count:hover {
+  cursor: default;
+}
+
+@media (min-width: 700px) {
+  .list_container {
+    display: flex;
+    min-width: 300px;
+    max-width: 800px;
+    gap: 4rem;
+  }
+}
