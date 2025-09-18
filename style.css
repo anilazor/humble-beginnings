@@ -171,6 +171,15 @@ button {
   border-radius: 10px;
   border: 0.5px solid rgb(233, 171, 218);
   box-shadow: inset 2px 4px 6px white;
+  color: rgb(34, 17, 25);
+}
+
+button:active {
+  color: rgb(34, 17, 25);
+}
+
+button:focus {
+  color: rgb(34, 17, 25);
 }
 
 button:hover {
